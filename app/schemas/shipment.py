@@ -1,12 +1,9 @@
-from random import randint
-from pydantic import BaseModel, Field
-from typing import Optional
+"""Shipment schemas for request/response validation."""
+
 from enum import Enum
-
-
-def random_destination():
-    """Generate a random destination code."""
-    return randint(11000, 11999)
+from random import randint
+from typing import Optional
+from pydantic import BaseModel, Field
 
 
 class ShipmentStatus(str, Enum):
@@ -17,6 +14,11 @@ class ShipmentStatus(str, Enum):
     DELIVERED = "delivered"
     DELAYED = "delayed"
     RETURNED = "returned"
+
+
+def random_destination():
+    """Generate a random destination code."""
+    return randint(11000, 11999)
 
 
 class ShipmentBase(BaseModel):
@@ -57,6 +59,7 @@ class ShipmentCreate(ShipmentBase):
 class Shipment(ShipmentBase):
     """Model for a complete shipment (response model)."""
 
+    id: int = Field(..., description="Unique identifier of the shipment")
     destination: int = Field(
         ..., description="Destination code of the shipment", ge=11000, le=11999
     )
