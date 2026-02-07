@@ -4,12 +4,15 @@ from .dependencies import ServiceDep
 from .schemas.shipment import ShipmentCreate, ShipmentRead, ShipmentUpdate
 
 # api router to group endpoints
+# tags=["Shipment"] groups all routes under this router in the Swagger UI (/docs).
+# When you open the API docs, you'll see a collapsible "Shipment" section containing
+# all these endpoints (get, post, patch, delete) for easier navigation.
 router = APIRouter(prefix="/shipment", tags=["Shipment"])
 
 
 ### Read a shipment by id
 @router.get("/", response_model=ShipmentRead)
-async def get_shipment(id: int, service: ServiceDep):
+async def get_shipment(id: int, service: ServiceDep,):
     # Check for shipment with given id
     shipment = await service.get(id)
 

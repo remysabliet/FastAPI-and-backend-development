@@ -1,0 +1,18 @@
+2026-02-07 10:27:39.448 JST [12421] LOG:  starting PostgreSQL 14.20 (Homebrew) on aarch64-apple-darwin24.6.0, compiled by Apple clang version 17.0.0 (clang-1700.4.4.1), 64-bit
+2026-02-07 10:27:39.448 JST [12421] LOG:  listening on IPv6 address "::1", port 5432
+2026-02-07 10:27:39.448 JST [12421] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-02-07 10:27:39.449 JST [12421] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-02-07 10:27:39.451 JST [12422] LOG:  database system was shut down at 2026-02-07 10:27:21 JST
+2026-02-07 10:27:39.454 JST [12421] LOG:  database system is ready to accept connections
+2026-02-07 10:27:47.205 JST [12435] FATAL:  database "shipfast" does not exist
+2026-02-07 10:37:00.549 JST [14340] FATAL:  role "postgres" does not exist
+2026-02-07 10:37:29.366 JST [14369] FATAL:  role "postgres" does not exist
+2026-02-07 10:37:56.336 JST [14533] FATAL:  database "fastship" does not exist
+2026-02-07 10:39:41.371 JST [14692] FATAL:  database "shipfast" does not exist
+2026-02-07 10:40:06.095 JST [12532] ERROR:  relation "shipment" does not exist at character 14
+2026-02-07 10:40:06.095 JST [12532] STATEMENT:  select* from shipment
+2026-02-07 10:41:16.029 JST [14934] FATAL:  database "shipfast" does not exist
+2026-02-07 10:43:53.105 JST [15294] ERROR:  database "fastship" already exists
+2026-02-07 10:43:53.105 JST [15294] STATEMENT:  CREATE DATABASE fastship;
+2026-02-07 10:44:32.019 JST [15558] FATAL:  database "shipfast" does not exist
+2026-02-07 10:44:47.846 JST [15595] FATAL:  database "shipfast" does not exist
