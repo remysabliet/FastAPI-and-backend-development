@@ -16,3 +16,7 @@
 2026-02-07 10:43:53.105 JST [15294] STATEMENT:  CREATE DATABASE fastship;
 2026-02-07 10:44:32.019 JST [15558] FATAL:  database "shipfast" does not exist
 2026-02-07 10:44:47.846 JST [15595] FATAL:  database "shipfast" does not exist
+2026-02-08 17:08:26.164 JST [12421] LOG:  received smart shutdown request
+2026-02-08 17:08:26.171 JST [12421] LOG:  background worker "logical replication launcher" (PID 12428) exited with exit code 1
+2026-02-08 17:08:26.171 JST [12423] LOG:  shutting down
+2026-02-08 17:08:26.210 JST [12421] LOG:  database system is shut down
